@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<Package xmlns="http://soap.sforce.com/2006/04/metadata">
+    <types>
+        <members>FirstDiamond</members>
+        <name>ApexClass</name>
+    </types>
+   <types>
+        <members>AccountMobileAggregateResultIterable</members>
+        <name>ApexClass</name>
+    </types>
+    <types>
+        <members>AccountMobileAggregateResultIterator</members>
+        <name>ApexClass</name>
+    </types>
+
+    <types>
+        <members>SecondDiamond</members>
+        <name>ApexClass</name>
+    </types>
+    <types>
+        <members>AccountNameAggregateResultIterable</members>
+        <name>ApexClass</name>
+    </types>
+    <types>
+        <members>AccountNameAggregateResultIterator</members>
+        <name>ApexClass</name>
+    </types>
+    
+
+    <types>
+        <members>ThirdDiamond</members>
+        <name>ApexClass</name>
+    </types>
+    <types>
+        <members>AccountNameMobileAggregateResultIterable</members>
+        <name>ApexClass</name>
+    </types>
+    <types>
+        <members>AccountNameMobileAggregateResultIterator</members>
+        <name>ApexClass</name>
+    </types>
+
+    <types>
+        <members>FourthDiamond</members>
+        <name>ApexClass</name>
+    </types>
+    <types>
+        <members>AccountEmailOptInAggregateResultIterable</members>
+        <name>ApexClass</name>
+    </types>
+    <types>
+        <members>AccountEmailOptInAggregateResultIterator</members>
+        <name>ApexClass</name>
+    </types>
+
+
+    <types>
+        <members>FifthDiamond</members>
+        <name>ApexClass</name>
+    </types>
+    <types>
+        <members>AccountPhoneAggregateResultIterable</members>
+        <name>ApexClass</name>
+    </types>
+    <types>
+        <members>AccountPhoneAggregateResultIterator</members>
+        <name>ApexClass</name>
+    </types>
+
+    <types>
+        <members>DedupUtils</members>
+        <name>ApexClass</name>
+    </types>
+
+    
+
+
+    <types>
+      <members>Dedupe_FirstDiamond_Where_Clause</members>
+      <name>CustomLabel</name>
+    </types>
+
+    <types>
+      <members>	Dedupe_SecondDiamond_Where_Clause</members>
+      <name>CustomLabel</name>
+    </types>
+
+    <types>
+      <members>Dedupe_ThirdDiamond_Where_Clause</members>
+      <name>CustomLabel</name>
+    </types>
+
+    <types>
+      <members>Dedupe_FourthDiamond_Where_Clause</members>
+      <name>CustomLabel</name>
+    </types>
+
+    <types>
+      <members>Dedupe_FifthDiamond_Where_Clause</members>
+      <name>CustomLabel</name>
+    </types>
+
+    <types>
+      <members>Dedupe_Related_Opportunities_Limit</members>
+      <name>CustomLabel</name>
+    </types>
+
+    <types>
+      <members>Dedup_Batch_Size</members>
+      <name>CustomLabel</name>
+    </types>
+
+
+    <version>63.0</version>
+</Package>

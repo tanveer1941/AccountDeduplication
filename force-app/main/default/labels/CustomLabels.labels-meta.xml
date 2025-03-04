@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomLabels xmlns="http://soap.sforce.com/2006/04/metadata">
+    <labels>
+        <fullName>Dedup_Batch_Size</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Dedup Batch Size</shortDescription>
+        <value>1</value>
+    </labels>
+    <labels>
+        <fullName>Dedupe_FifthDiamond_Where_Clause</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Dedupe FifthDiamond Where Clause</shortDescription>
+        <value>Select count (id), count(Customer_ID__c), PersonEmail, Phone from account where RecordType.Name =&apos;Person Account&apos; AND PersonEmail!=null AND PersonEmail!=&apos;nobody@campspot.com&apos; AND Phone!=null GROUP BY PersonEmail, Phone Having Count(id)&gt;1 AND count(Customer_ID__c)&lt;2</value>
+    </labels>
+    <labels>
+        <fullName>Dedupe_FirstDiamond_Where_Clause</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Dedupe FirstDiamond Where Clause</shortDescription>
+        <value>Select count (id), count(Customer_ID__c), PersonEmail, PersonMobilePhone from account where RecordType.Name =&apos;Person Account&apos; AND PersonEmail!=null AND PersonEmail!=&apos;nobody@campspot.com&apos;  AND PersonMobilePhone!=null GROUP BY PersonEmail, PersonMobilePhone Having Count(id)&gt;1 AND count(Customer_ID__c)&lt;2</value>
+    </labels>
+    <labels>
+        <fullName>Dedupe_FourthDiamond_Where_Clause</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Dedupe FourthDiamond Where Clause</shortDescription>
+        <value>Select count (id), count(Customer_ID__c), PersonEmail , Email_Opt_in__c,SMS_Opt_in__c  from account where RecordType.Name =&apos;Person Account&apos; AND PersonEmail!=null AND PersonEmail!=&apos;nobody@campspot.com&apos; AND   (Email_Opt_in__c =true or SMS_Opt_in__c=true) GROUP BY PersonEmail,Email_Opt_in__c,SMS_Opt_in__c  Having Count(id)&gt;1 AND count(Customer_ID__c)&lt;2</value>
+    </labels>
+    <labels>
+        <fullName>Dedupe_Related_Opportunities_Limit</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Dedupe Related Opportunities Limit</shortDescription>
+        <value>500</value>
+    </labels>
+    <labels>
+        <fullName>Dedupe_SecondDiamond_Where_Clause</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Dedupe SecondDiamond Where Clause</shortDescription>
+        <value>Select count (id), count(personmobilephone), count(Customer_ID__c), PersonEmail, Name from account where RecordType.Name =&apos;Person Account&apos; AND PersonEmail!=null AND PersonEmail!=&apos;nobody@campspot.com&apos; AND  Name!=null GROUP BY PersonEmail, Name  Having Count(id)&gt;1 AND count(personmobilephone) &lt;2 AND count(Customer_ID__c)&lt;2</value>
+    </labels>
+    <labels>
+        <fullName>Dedupe_ThirdDiamond_Where_Clause</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Dedupe ThirdDiamond Where Clause</shortDescription>
+        <value>Select count (id), count(PersonEmail), count(Customer_ID__c), PersonMobilePhone, Name from account where RecordType.Name =&apos;Person Account&apos; AND PersonMobilePhone!=null AND PersonEmail!=&apos;nobody@campspot.com&apos; GROUP BY PersonMobilePhone, Name  Having Count(id)&gt;1 and count(PersonEmail)&lt;2 AND count(Customer_ID__c)&lt;2</value>
+    </labels>
+</CustomLabels>
